@@ -254,7 +254,22 @@
     					</div>
 
     					<div class="span8">
-
+    						<div class="messages">
+    							<h4 class="header"><a href="#" id="task_title" data-name="title" data-type="text" data-pk="1" data-url="php/updatetask.php" data-original-title="Enter Task Title" class="editable editable-click">Task Title Task 2</a></h4>
+    							<p>
+    								<span>
+    									Job ID : <a href="#" id="task_job_id" data-name="job_id" data-type="text" data-pk="1" data-url="php/updatetask.php" data-original-title="Enter Job ID" class="editable editable-click">1001</a>
+    								</span>
+    								&nbsp;
+    								<span>
+    									Assigned to : <a href="#" id="task_assigned_to" data-name="assigned_to" data-type="select" data-pk="1" data-url="php/updatetask.php" data-original-title="Assigned To" class="editable editable-click"></a>
+    								</span>
+    								&nbsp;
+    								<span>
+    									Hours : <a href="#" id="task_hours" data-name="hours" data-type="number" data-pk="1" data-url="php/updatetask.php" data-original-title="Assigned To" class="editable editable-click">8</a>
+    								</span>
+    							</p>
+    						</div>
     					</div>
     				</div>
     			</div>
@@ -277,6 +292,18 @@
 			jQuery(function($) {
     			$(".date").easydate({ 'live': false });
     			$(".date").show();
+
+    			$('#task_title').editable();
+    			$('#task_job_id').editable();
+    			$('#task_hours').editable();
+				$('#task_assigned_to').editable({
+					value: 1,
+					source: [
+						{value: 1, text: 'Masood Ahmed'},
+						{value: 2, text: 'Manoj Kumar'},
+						{value: 3, text: 'Richard Valsalan'}
+					]
+				});
 			});
 		</script>
     </body>

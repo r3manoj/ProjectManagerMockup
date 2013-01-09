@@ -219,3 +219,8 @@ footer a:hover {
 .dropdown-menu .activity a.activity-preview:last-child {
 	border-bottom: none;
 }
+
+.messages h4 {
+	text-transform: none;
+	font-weight: 400;
+}

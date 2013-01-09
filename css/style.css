@@ -19,6 +19,16 @@ h6 {
 	font-weight: 300;
 }
 
+@media (max-width: 979px) {
+	.navbar-fixed-top {
+		margin-bottom: 0;
+	}
+
+	.navbar-fixed-top .navbar-inner {
+		padding: 5px 20px;
+	}
+}
+
 .date {
 	display: none;
 }

@@ -3,6 +3,10 @@ body {
 	font-family: Lato;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 a:focus {
 	outline: none;
 }

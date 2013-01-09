@@ -42,6 +42,21 @@ h6 {
 	margin-top: 10px;
 }
 
+.page-sub-nav ul li a {
+	display: block;
+	border-radius: 6px;
+	padding: 15px 10px 5px;
+	color: #fff;
+	margin: 0 10px;
+	text-decoration: none;
+}
+
+.page-sub-nav ul li a.active,
+.page-sub-nav ul li a:hover {
+	background-color: #555;
+	text-decoration: none;
+}
+
 .knob {
 	text-align: center;
 }

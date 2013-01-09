@@ -38,12 +38,12 @@
 					<a href="index.html" class="brand">Project Manager</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav pull-left">
-							<li class="active">
+							<li>
 								<a href="index.html">
 									<i class="icon-home icon-white"></i>
 								</a>
 							</li>
-							<li class="dropdown">
+							<li class="dropdown active">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 									Projects
 								</a>
@@ -192,32 +192,7 @@
     		<div class="container">
     			<div class="row">
     				<div class="span12">
-    					<ul>
-    						<li>
-    							<div class="span2 knob">
-    								<h4>Open Tasks</h4>
-    								<div class="chart" data-percent="60">4 / 10</div>
-	    						</div>
-    						</li>
-    						<li>
-    							<div class="span2 knob">
-    								<h4>Productivity</h4>
-    								<div class="chart" data-percent="83">83%</div>
-	    						</div>
-    						</li>
-    						<li>
-    							<div class="span2 knob">
-    								<h4>Todays Time</h4>
-    								<div class="chart" data-percent="12">1:36</div>
-	    						</div>
-    						</li>
-    						<li>
-    							<div class="span2 knob">
-    								<h4>Month's Time</h4>
-    								<div class="chart" data-percent="30">53:00</div>
-	    						</div>
-    						</li>
-    					</ul>
+
     				</div>
     			</div>
     		</div>
@@ -228,62 +203,11 @@
     			<div class="container">
     				<div class="row">
     					<div class="span3">
-    						<h4 class="header">Filter by Project</h4>
 
-    						<div class="filters">
-    							<input type="checkbox" id="checkbox_project_1">
-    							<label for="checkbox_project_1">Test Project</label>
-    							<input type="checkbox" id="checkbox_project_2">
-    							<label for="checkbox_project_2">Test Project 2</label>
-    						</div>
     					</div>
 
     					<div class="span9">
-    						<h4 class="header">Activity</h4>
 
-    						<div class="activity">
-    							<div class="item unread">
-    								<a href="#">
-	    								<img src="profiles/default.png" class="avatar img-rounded">
-	    								<abbr class="date pull-right">Tue, 08 Jan 2013 16:06:48 +0530</abbr>
-	    								<p><strong>Comment posted on (Project Name) Task Title by Masood Ahmed</strong></p>
-
-	    								<div class="row">
-	    									<p class="span6">
-	    										 This is a test comment.
-	    									</p>
-	    								</div>
-    								</a>
-    							</div>
-
-    							<div class="item unread">
-    								<a href="#">
-	    								<img src="profiles/default.png" class="avatar img-rounded">
-	    								<abbr class="date pull-right">Tue, 08 Jan 2013 15:07:48 +0530</abbr>
-	    								<p><strong>Masood Ahmed assigned a (Project Name) Task Title to you.</strong></p>
-
-	    								<div class="row">
-	    									<p class="span6">
-	    										 Pushed to repo "new edits for the nav bar". This is a much longer description to show when this paragraph will end. A fixed width for easy readability.
-	    									</p>
-	    								</div>
-	    							</a>
-    							</div>
-
-    							<div class="item">
-    								<a href="#">
-	    								<img src="profiles/default.png" class="avatar img-rounded">
-	    								<abbr class="date pull-right">Tue, 08 Jan 2013 14:37:48 +0530</abbr>
-	    								<p><strong>Masood Ahmed added you to Test Project.</strong></p>
-
-	    								<div class="row">
-	    									<p class="span6">
-	    										 Take some time to go thru the project, and create tasks for yourself and others!
-	    									</p>
-	    								</div>
-	    							</a>
-    							</div>
-    						</div>
     					</div>
     				</div>
     			</div>
@@ -306,26 +230,6 @@
 			jQuery(function($) {
     			$(".date").easydate({ 'live': false });
     			$(".date").show();
-			    $('.chart').easyPieChart({
-			    	barColor: function(percent) {
-			    		if (percent <= 25) {
-			    			return "rgb(234, 73, 74)";
-			    		}
-			    		else if (percent <= 50) {
-			    			return "rgb(255, 169, 60)";
-			    		}
-			    		else if (percent <= 75) {
-			    			return "rgb(175, 169, 60)";
-			    		}
-			    		else {
-			    			return "rgb(100, 169, 60)";
-			    		}
-                    },
-                    trackColor: '#5c5c5c',
-                    scaleColor: false,
-                    lineCap: 'butt',
-                    lineWidth: 15
-			    });
 			});
 		</script>
     </body>

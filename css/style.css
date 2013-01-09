@@ -118,44 +118,6 @@ h6 {
 	margin-right: 10px;
 }
 
-.activity .item {
-	border-bottom: 1px solid #eee;
-	padding: 10px 10px 15px 70px;
-	background-color: #fff;
-}
-
-.activity .item:last-child {
-	border-bottom: none;
-}
-
-.activity .item .avatar {
-	margin-left: -40px;
-	margin-bottom: -40px;
-	height: 40px;
-	position: relative;
-	top: 15px;
-	right: 20px;
-	float: left;
-}
-
-.activity .item a {
-	color: #333;
-	text-decoration: none;
-}
-
-.activity .item a:hover {
-	color: #000;
-}
-
-.dropdown-menu .activity .item {
-	padding: 5px 10px 5px 70px;
-}
-
-.activity .unread {
-	background-color: #eff1f7;
-	border-bottom: 1px solid #d1d8e7;
-}
-
 footer {
 	padding: 20px 0;
 	color: #999;
@@ -169,4 +131,91 @@ footer a {
 footer a:hover {
 	color: #333;
 	text-decoration: none;
+}
+
+.message-sidebar {
+	border-right: 1px solid #eee;
+	margin: -20px;
+	margin-right: 0;
+}
+
+@media (min-width: 768px) {
+	.message-sidebar {
+		overflow: auto;
+		height: 700px;
+	}
+}
+
+.activity a.activity-preview .avatar {
+	margin-left: -40px;
+	margin-bottom: -40px;
+	height: 40px;
+	position: relative;
+	top: 15px;
+	right: 20px;
+	float: left;
+}
+
+.activity a.activity-preview,
+.message-sidebar a.message-preview {
+	display: block;
+	background-color: #f6f6f6;
+	border-bottom: 1px solid #eee;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+.activity a.activity-preview {
+	padding: 10px 10px 15px 70px;
+}
+
+.activity a.new,
+.message-sidebar a.new {
+	background-color: #fff;
+}
+
+.activity a.active,
+.activity a:hover,
+.message-sidebar a.active,
+.message-sidebar a:hover {
+	background-color: #008dcd;
+	color: #fff;
+}
+
+.activity a.activity-preview p,
+.activity a.activity-preview abbr,
+.activity a.activity-preview h5 {
+	color: #333;
+}
+
+.message-sidebar a.message-preview p,
+.message-sidebar a.message-preview abbr,
+.message-sidebar a.message-preview h5 {
+	color: #999;
+}
+
+.activity a:hover p,
+.activity a:hover abbr,
+.activity a:hover h5,
+.message-sidebar a.active p,
+.message-sidebar a.active abbr,
+.message-sidebar a.active h5,
+.message-sidebar a:hover p,
+.message-sidebar a:hover abbr,
+.message-sidebar a:hover h5 {
+	color: #eee;
+}
+
+.activity a.activity-preview h4,
+.message-sidebar a.message-preview h4 {
+	text-transform: none;
+	font-weight: 400;
+}
+
+.dropdown-menu .activity a.activity-preview {
+	padding: 5px 10px 5px 70px;
+}
+
+.dropdown-menu .activity a.activity-preview:last-child {
+	border-bottom: none;
 }

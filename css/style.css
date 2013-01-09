@@ -226,3 +226,9 @@ footer a:hover {
 	text-transform: none;
 	font-weight: 400;
 }
+
+.message-sidebar .progress {
+	margin-bottom: 10px;
+	border-radius: 4px;
+	height: 8px;
+}

@@ -3,6 +3,14 @@ body {
 	font-family: Lato;
 }
 
+p {
+	font-size: 0.9em;
+}
+
+p.sub {
+	color: #999;
+}
+
 a:hover {
 	text-decoration: none;
 }
@@ -231,4 +239,22 @@ footer a:hover {
 	margin-bottom: 10px;
 	border-radius: 4px;
 	height: 8px;
+}
+
+.page p.header_bottom {
+	margin-bottom: 20px;
+}
+
+.messages .message {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 20px;
+}
+
+.messages .message-body {
+	padding-left: 80px;
+}
+
+.messages .message-body h5 {
+	font-weight: 300;
 }
